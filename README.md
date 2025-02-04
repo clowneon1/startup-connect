@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Startup-Connect
 
-## Getting Started
+## About
 
-First, run the development server:
+Startup-Connect is a platform designed for startups to showcase their ideas, gain visibility, and receive open support from the community. It enables innovators to connect, pitch, and grow with valuable insights and collaborations.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Pitch Your Idea** – Share your startup vision with a wider audience.
+- **Gain Visibility** – Get noticed by potential supporters and industry experts.
+- **Community Support** – Receive feedback, advice, and connections from like-minded individuals.
+- **Collaborate & Grow** – Find partners, mentors, and contributors to refine and expand your project.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How It Works
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Create a Profile** – Set up your startup’s profile with key details and objectives.
+2. **Submit a Pitch** – Present your project through a compelling pitch.
+3. **Engage with the Community** – Get feedback, insights, and support from peers and experts.
+4. **Expand Your Network** – Connect with mentors, partners, and industry leaders.
 
-## Learn More
+## Who Can Join?
 
-To learn more about Next.js, take a look at the following resources:
+- Entrepreneurs & Startups
+- Industry Experts & Mentors
+- Investors & Business Enthusiasts
+- Developers, Designers & Contributors
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Get Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Visit [Startup-Connect](#) to create your profile and start sharing your vision today!
