@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import path from "path";
 import localFont from "next/font/local";
 
 const workSans = localFont({
