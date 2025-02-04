@@ -1,5 +1,6 @@
 import React from "react";
 import SearchForm from "@/components/SearchForm";
+import StartupCard from "@/components/StartupCard";
 
 const Home = async ({
   searchParams,
@@ -10,14 +11,13 @@ const Home = async ({
 
   const posts = [
     {
-      _createdAt: "Yesterday",
+      _createdAt: new Date(),
       views: 100,
-      author: "John Doe",
+      author: { _id: 1, name: "John Doe" },
       _id: "1",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nisl ultricies",
-      image:
-        "https://images.unsplash.com/photo-1630480003494-4b3b3b3b3b3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMjIwNzN8MHwxfGFsbHwxf",
+      image: "https://i.imgur.com/hUQNULl.jpeg",
       category: "Tech",
       title: "Tech Fest",
     },
@@ -33,6 +33,21 @@ const Home = async ({
           Pitch, Connect, and Grow—Turn Ideas Into Opportunities!
         </p>
         <SearchForm query={query} />
+      </section>
+
+      <section className="section_container">
+        <p className="text-30-semibold">
+          {query ? `Search results for "${query}"` : "All Startups"}
+        </p>
+        <ul className="mt-7 card_grid">
+          {posts?.length > 0 ? (
+            posts.map((post: StartupCardType, index: number) => (
+              <StartupCard key={post?._id} post={post} />
+            ))
+          ) : (
+            <div className="no-results"> No Startups Found</div>
+          )}
+        </ul>
       </section>
     </>
   );
