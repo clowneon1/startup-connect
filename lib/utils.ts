@@ -20,3 +20,7 @@ export function formatViews(views: number) {
   if (views < 1000000) return `${(views / 1000).toFixed(1)}k Views`;
   return `${(views / 1000000).toFixed(1)}m Views`;
 }
+
+export function parseServerActionResponse<T>(response: T) {
+  return JSON.parse(JSON.stringify(response));
+}
