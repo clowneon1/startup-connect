@@ -102,7 +102,7 @@
   }
 
   .view_skeleton {
-    @apply bg-zinc-400 h-10 w-24 rounded-lg fixed bottom-3 right-3;
+    @apply bg-zinc-400 h-10 w-24 rounded-lg fixed bottom-20 right-3;
   }
 
   /* navbar */
