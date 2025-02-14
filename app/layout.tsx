@@ -3,6 +3,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import "easymde/dist/easymde.min.css";
 import { Toaster } from "@/components/ui/toaster";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const workSans = localFont({
   src: [
@@ -60,12 +61,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const GOOGlE_ANALYTICS_ID: string = process.env.GOOGLE_ANALYTICS_ID || "";
   return (
     <html lang="en">
       <body className={`${workSans.variable} ${workSans.variable} antialiased`}>
         {children}
         <Toaster />
       </body>
+      <GoogleAnalytics gaId={GOOGlE_ANALYTICS_ID} />
     </html>
   );
 }
