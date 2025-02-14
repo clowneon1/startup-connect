@@ -55,10 +55,9 @@ export const metadata: Metadata = {
   title: "Startup Connect",
   description: "Pitch, Connect, and Grow",
   verification: {
-    google: "google2714df8ff2286aa9.html",
+    google: process.env.GOOGLE_SEARCH_CONSOLE_ID || "",
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
