@@ -54,6 +54,9 @@ const workSans = localFont({
 export const metadata: Metadata = {
   title: "Startup Connect",
   description: "Pitch, Connect, and Grow",
+  verification: {
+    google: "google2714df8ff2286aa9.html",
+  },
 };
 
 export default function RootLayout({
